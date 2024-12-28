@@ -12,7 +12,7 @@ double PIDController::compute(double desired, double current_value) {
     return output;
 }
 
-void PIDController: : set(doub l e Kp, double Ki, double Kd) {
+void PIDController::set(double Kp, double Ki, double Kd) {
     _Kp = Kp;
     _Ki = Ki;
     _Kd = Kd;
