@@ -12,6 +12,12 @@ double PIDController::compute(double desired, double current_value) {
     return output;
 }
 
+void PIDController: : set(doub l e Kp, double Ki, double Kd) {
+    _Kp = Kp;
+    _Ki = Ki;
+    _Kd = Kd;
+}
+
 void PIDController::reset() {
     _previous_error = 0;
     _integral = 0;
