@@ -1,17 +1,22 @@
 # Controllers
 
-This library contains commonly used System Controllers that you can use in your next robotics project.
+This repository hosts a C++ System Controller Library designed for versatile use across various robotics projects. The library provides a robust framework for implementing advanced control algorithms, making it an ideal choice for autonomous drones, mobile robots, and other robotic systems requiring precision and adaptability.
 
-## Build Instructions
+## Installation and Usage
 
-```sh
+1. Clone the repository:
+```bash
+git clone https://github.com/htanmo/controllers.git
+```
+
+2. Build the library
+```bash 
 mkdir build && cd build
-```
-
-```sh
 cmake ..
+make
 ```
 
-```sh
-make
+3. Link it to your project
+```cmake
+target_link_libraries(your_project_name PRIVATE controllers)
 ```
