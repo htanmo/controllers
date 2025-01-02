@@ -5,7 +5,7 @@ PIDController::PIDController(double Kp, double Ki, double Kd)
 
 double PIDController::compute(double desired, double current_value) {
     double error = desired - current_value;
-    double derivative = _previous_error - error;
+    double derivative = error - _previous_error;
     _integral += error;
     double output = _Kp * error + _Ki * _integral + _Kd * derivative;
     _previous_error = error;
@@ -22,3 +22,4 @@ void PIDController::reset() {
     _previous_error = 0;
     _integral = 0;
 }
+
